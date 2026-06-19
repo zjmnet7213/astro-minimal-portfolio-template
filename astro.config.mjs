@@ -8,13 +8,9 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   integrations: [icon()],
-  output: "server",
+  output: "static",
 
-  adapter: node({
-    mode: "standalone",
-  }),
-
-  markdown: {
+   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
 
